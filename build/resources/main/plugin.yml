@@ -1,0 +1,5 @@
+name: VaultChatFormatter
+version: '1.0-SNAPSHOT'
+main: me.lucko.chatformatter.VaultChatFormatter
+api-version: '1.21'
+load: STARTUP

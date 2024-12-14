@@ -12,6 +12,7 @@ import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.server.ServiceRegisterEvent;
 import org.bukkit.event.server.ServiceUnregisterEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 import java.util.regex.Matcher;
@@ -20,7 +21,7 @@ import java.util.regex.Pattern;
 /**
  * A super simple chat formatting plugin using Vault.
  */
-public class ChatFormatterPlugin extends JavaPlugin implements Listener {
+public class VaultChatFormatterPlugin extends JavaPlugin implements Listener {
 
     // Format placeholders
     private static final String NAME_PLACEHOLDER = "{name}";
@@ -74,7 +75,7 @@ public class ChatFormatterPlugin extends JavaPlugin implements Listener {
     }
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args) {
         if (args.length != 0 && args[0].equalsIgnoreCase("reload")) {
             reloadConfig();
             reloadConfigValues();
