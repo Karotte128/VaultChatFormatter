@@ -1,10 +1,9 @@
-name: ${project.name}
-version: ${project.version}
-main: me.lucko.chatformatter.ChatFormatterPlugin
-description: ${project.description}
-author: Luck
+name: VaultChatFormatter
+version: '1.0-SNAPSHOT'
+main: me.lucko.chatformatter.VaultChatFormatter
 depend: [Vault]
-api-version: 1.13
+api-version: 1.21
+load: STARTUP
 
 commands:
   vaultchatformatter:
