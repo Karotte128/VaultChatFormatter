@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 /**
  * A super simple chat formatting plugin using Vault.
  */
-public class VaultChatFormatterPlugin extends JavaPlugin implements Listener {
+public class VaultChatFormatter extends JavaPlugin implements Listener {
 
     // Format placeholders
     private static final String NAME_PLACEHOLDER = "{name}";
